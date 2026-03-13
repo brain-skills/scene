@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Post About Life	</title>
+	<atom:link href="http://skrollex-wp.x40.ru/nora/2016/04/23/post-about-life/feed/" rel="self" type="application/rss+xml" />
+	<link>http://skrollex-wp.x40.ru/nora/2016/04/23/post-about-life/</link>
+	<description>Just another site</description>
+	<lastBuildDate>Sat, 23 Apr 2016 20:23:17 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.3</generator>
+			<item>
+				<title>
+				By: admin				</title>
+				<link>http://skrollex-wp.x40.ru/nora/2016/04/23/post-about-life/#comment-28</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Thu, 26 Nov 2015 22:52:09 +0000</pubDate>
+		<guid isPermaLink="false">http://skrollex-wp.x40.ru/?p=242#comment-28</guid>
+					<description><![CDATA[Maecenas et vulputate justo, sit amet tristique tellus. Etiam auctor nec urna quis tincidunt. Duis eget dui efficitur, euismod ante vitae, volutpat est. Etiam quis quam quis est pretium facilisis et eget nibh. Vestibulum finibus risus eu felis vehicula pellentesque.]]></description>
+		<content:encoded><![CDATA[<p>Maecenas et vulputate justo, sit amet tristique tellus. Etiam auctor nec urna quis tincidunt. Duis eget dui efficitur, euismod ante vitae, volutpat est. Etiam quis quam quis est pretium facilisis et eget nibh. Vestibulum finibus risus eu felis vehicula pellentesque.</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				By: admin				</title>
+				<link>http://skrollex-wp.x40.ru/nora/2016/04/23/post-about-life/#comment-27</link>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Thu, 26 Nov 2015 22:51:33 +0000</pubDate>
+		<guid isPermaLink="false">http://skrollex-wp.x40.ru/?p=242#comment-27</guid>
+					<description><![CDATA[Etiam at leo fermentum, bibendum urna ac, vehicula orci. Suspendisse quis vehicula enim. Cras eget iaculis urna, sed interdum tellus.]]></description>
+		<content:encoded><![CDATA[<p>Etiam at leo fermentum, bibendum urna ac, vehicula orci. Suspendisse quis vehicula enim. Cras eget iaculis urna, sed interdum tellus.</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>
