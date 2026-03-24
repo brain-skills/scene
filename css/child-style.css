@@ -7620,6 +7620,7 @@ ul.no-mark ul:not([class]) {
 }
 .site-decoration-b .footer-bottom {
   padding-bottom: 47px;
+  border-top: 1px solid #ed682d;
 }
 .site-decoration-b .ext-nav {
   top: 40px;
