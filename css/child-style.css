@@ -7200,6 +7200,8 @@ html[class*='column'],
 div[class*=' off-canvas-'] .nav-mobile {
   padding-top: 15px;
 }
+.sidebar { position: relative; }
+.sidebar-sticky { position: relative; width: 100%; }
 /*==================================================================
 35. WordPress Elements / .widget, .search-form, ...
 ==================================================================*/

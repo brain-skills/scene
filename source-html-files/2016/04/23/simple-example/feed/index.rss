@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments on: Simple Example	</title>
-	<atom:link href="http://skrollex-wp.x40.ru/nora/2016/04/23/simple-example/feed/" rel="self" type="application/rss+xml" />
-	<link>http://skrollex-wp.x40.ru/nora/2016/04/23/simple-example/</link>
+	<atom:link href="http://skene-wp.x40.ru/nora/2016/04/23/simple-example/feed/" rel="self" type="application/rss+xml" />
+	<link>http://skene-wp.x40.ru/nora/2016/04/23/simple-example/</link>
 	<description>Just another site</description>
 	<lastBuildDate>Thu, 12 May 2016 04:55:53 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,10 +20,10 @@
 			<item>
 				<title>
 				By: admin				</title>
-				<link>http://skrollex-wp.x40.ru/nora/2016/04/23/simple-example/#comment-29</link>
+				<link>http://skene-wp.x40.ru/nora/2016/04/23/simple-example/#comment-29</link>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<pubDate>Thu, 26 Nov 2015 22:50:33 +0000</pubDate>
-		<guid isPermaLink="false">http://skrollex-wp.x40.ru/?p=604#comment-29</guid>
+		<guid isPermaLink="false">http://skene-wp.x40.ru/?p=604#comment-29</guid>
 					<description><![CDATA[Phasellus elementum urna ut ultricies pharetra. Pellentesque commodo massa quis cursus ullamcorper. Duis dictum, lorem quis aliquet tristique, odio nisi auctor orci, sed pharetra eros nibh et odio.]]></description>
 		<content:encoded><![CDATA[<p>Phasellus elementum urna ut ultricies pharetra. Pellentesque commodo massa quis cursus ullamcorper. Duis dictum, lorem quis aliquet tristique, odio nisi auctor orci, sed pharetra eros nibh et odio.</p>
 ]]></content:encoded>

@@ -1,4 +1,4 @@
-/*! Skrollex */ ! function a(b, c, d) {
+/*! Skene */ ! function a(b, c, d) {
     function e(g, h) { if (!c[g]) { if (!b[g]) { var i = "function" == typeof require && require; if (!h && i) return i(g, !0); if (f) return f(g, !0); throw new Error("Cannot find module '" + g + "'") } var j = c[g] = { exports: {} };
             b[g][0].call(j.exports, function(a) { var c = b[g][1][a]; return e(c ? c : a) }, j, j.exports, a, b, c, d) } return c[g].exports } for (var f = "function" == typeof require && require, g = 0; g < d.length; g++) e(d[g]); return e }({
     1: [function(a, b, c) { "use strict"; var d = jQuery;
@@ -46,7 +46,7 @@
                         r = Math.round(Math.random() * k),
                         s = Math.round(Math.random() * l),
                         t = i[r];
-                    q.ssScale = t[0].scale, q.ssOrig = j[s], q.ssOpacity = b !== h || c ? 1 : 0, b !== h || c || new TWEEN.Tween(q).to({ ssOpacity: 1 }, e).easing(m).onComplete(function() { a.each(function() { d(this).data().ssOpacity = 1 }) }).start(), new TWEEN.Tween(q).to({ ssScale: t[1].scale }, f).easing(n).start(), b > 0 ? new TWEEN.Tween({ ssOpacity: 1 }).to({ ssOpacity: 0 }, e).onUpdate(function() { q.ssOpacity = this.ssOpacity }).easing(m).delay(f - e).onStart(function() { g(b - 1) }).start() : new TWEEN.Tween(q).to({}, 0).easing(m).delay(f - e).onStart(function() { g(h) }).start() } if (!(b || window.skrollexConfig.screenshotMode || c)) { var h = a.length - 1;
+                    q.ssScale = t[0].scale, q.ssOrig = j[s], q.ssOpacity = b !== h || c ? 1 : 0, b !== h || c || new TWEEN.Tween(q).to({ ssOpacity: 1 }, e).easing(m).onComplete(function() { a.each(function() { d(this).data().ssOpacity = 1 }) }).start(), new TWEEN.Tween(q).to({ ssScale: t[1].scale }, f).easing(n).start(), b > 0 ? new TWEEN.Tween({ ssOpacity: 1 }).to({ ssOpacity: 0 }, e).onUpdate(function() { q.ssOpacity = this.ssOpacity }).easing(m).delay(f - e).onStart(function() { g(b - 1) }).start() : new TWEEN.Tween(q).to({}, 0).easing(m).delay(f - e).onStart(function() { g(h) }).start() } if (!(b || window.skeneConfig.screenshotMode || c)) { var h = a.length - 1;
                     g(h, !0) } } } }, { "../app/app-share.js": 5 }],
     5: [function(a, b, c) { "use strict"; var d = jQuery;
         b.exports = new function() { var a = -1 != navigator.appVersion.indexOf("Windows NT 6.1") || -1 != navigator.appVersion.indexOf("Windows NT 6.0") || -1 != navigator.appVersion.indexOf("Windows NT 5.1") || -1 != navigator.appVersion.indexOf("Windows NT 5.0"),
@@ -482,11 +482,11 @@
         b.exports = function(b) {
             function c() { s.css({ height: C.height() - parseInt(r.css("top").replace("px", "")) - 75 + "px" }) }
 
-            function e() { F("skrollexThemeCustomized", "yes") }
+            function e() { F("skeneThemeCustomized", "yes") }
 
-            function f() { F("skrollexThemeCustomized", "") }
+            function f() { F("skeneThemeCustomized", "") }
 
-            function g() { var a = G("skrollexThemeCustomized"); return "yes" === a }
+            function g() { var a = G("skeneThemeCustomized"); return "yes" === a }
 
             function h() { for (var a = 0; A > a; a++) i(String.fromCharCode(65 + a).toLowerCase());
                 l('<span><span class="primary-color"></span></span>', ".primary-color", "color", "input.primary-bg", "primary-bg", p), l('<span><span class="out-primary"></span></span>', ".out-primary", "opacity", "input.primary-out", "primary-out", j, k), l('<span><span class="success-color"></span></span>', ".success-color", "color", "input.success-bg", "success-bg", p), l('<span><span class="out-success"></span></span>', ".out-success", "opacity", "input.success-out", "success-out", j, k), l('<span><span class="info-color"></span></span>', ".info-color", "color", "input.info-bg", "info-bg", p), l('<span><span class="out-info"></span></span>', ".out-info", "opacity", "input.info-out", "info-out", j, k), l('<span><span class="warning-color"></span></span>', ".warning-color", "color", "input.warning-bg", "warning-bg", p), l('<span><span class="out-warning"></span></span>', ".out-warning", "opacity", "input.warning-out", "warning-out", j, k), l('<span><span class="danger-color"></span></span>', ".danger-color", "color", "input.danger-bg", "danger-bg", p), l('<span><span class="out-danger"></span></span>', ".out-danger", "opacity", "input.danger-out", "danger-out", j, k) }
@@ -516,7 +516,7 @@
                             b = a.val();
                         o && clearTimeout(o), e(), B.lessVars[g] = b, n() }) } }
 
-            function m() { return B.isShowPanel ? (d(".top-pane .reset").click(function(a) { a.preventDefault(), f(), B.hide(), d("#" + E).remove(), D = !1; var b = s.find(".options-gate"); return b.css({ visibility: "visible" }), b.css({ opacity: 1 }), sessionStorage.setItem("lessVars", JSON.stringify({})), B.lessVars = {}, !1 }), r.css({ left: -1 * u + "px" }), t.click(function(a) { return a.preventDefault(), skrollexConfig.isCustomizer ? (F("skrollexShowColorPanel", "yes"), window.parent.location = skrollexConfig.permalink) : r.hasClass("on") ? B.hide() : B.show(), !1 }), s.find(".save-custom-css").click(function(a) { a.preventDefault();
+            function m() { return B.isShowPanel ? (d(".top-pane .reset").click(function(a) { a.preventDefault(), f(), B.hide(), d("#" + E).remove(), D = !1; var b = s.find(".options-gate"); return b.css({ visibility: "visible" }), b.css({ opacity: 1 }), sessionStorage.setItem("lessVars", JSON.stringify({})), B.lessVars = {}, !1 }), r.css({ left: -1 * u + "px" }), t.click(function(a) { return a.preventDefault(), skeneConfig.isCustomizer ? (F("skeneShowColorPanel", "yes"), window.parent.location = skeneConfig.permalink) : r.hasClass("on") ? B.hide() : B.show(), !1 }), s.find(".save-custom-css").click(function(a) { a.preventDefault();
                     v.find(".css-content"); if (a.shiftKey) { var b = '@import "theme.less";\r\n\r\n'; for (var c in B.lessVars) b = b + "@" + c + ": " + B.lessVars[c] + ";\r\n";
                         v.find(".css-content").text(b), new TWEEN.Tween({ autoAlpha: 0, x: -450 }).to({ autoAlpha: 1, x: 0 }, 400).onUpdate(function() { v.css({ opacity: this.autoAlpha, visibility: this.autoAlpha > 0 ? "visible" : "hidden" }), Modernizr.csstransforms3d && z.force3D ? v.css({ transform: "translate3d(" + this.x + "px, 0px, 0px)" }) : v.css({ transform: "translate(" + this.x + "px, 0px)" }) }).easing(TWEEN.Easing.Quadratic.Out).start() } else if (d("body").hasClass("admin-bar")) { q || n(); var b = q.replace(/(\r\n|\r|\n)/g, "\r\n"),
                             e = d("#save-custom-css"),
@@ -527,7 +527,7 @@
                 sessionStorage.setItem("lessVars", JSON.stringify(B.lessVars)), o(b, function(b) { if (!a) { q = b; var c = d("#" + E);
                         c.length < 1 ? d('<style type="text/css" id="' + E + '">\n' + b + "</style>").appendTo("head") : c[0].innerHTML ? c[0].innerHTML = q : c[0].styleSheet.cssText = q } }) }
 
-            function o(a, b) { less.render(a, { currentDirectory: "assets/css/src/schemes/", filename: skrollexConfig.themeUri + "assets/css/src/schemes/colors-custom.less", entryPath: "assets/css/src/schemes/", rootpath: "assets/css/src/schemes/", rootFilename: "assets/css/src/schemes/colors-custom.less", relativeUrls: !1, useFileCache: !1, compress: !1, modifyVars: B.lessVars, globalVars: less.globalVars }, function(a, c) { b(c.css) }) }
+            function o(a, b) { less.render(a, { currentDirectory: "assets/css/src/schemes/", filename: skeneConfig.themeUri + "assets/css/src/schemes/colors-custom.less", entryPath: "assets/css/src/schemes/", rootpath: "assets/css/src/schemes/", rootFilename: "assets/css/src/schemes/colors-custom.less", relativeUrls: !1, useFileCache: !1, compress: !1, modifyVars: B.lessVars, globalVars: less.globalVars }, function(a, c) { b(c.css) }) }
 
             function p(a) {
                 function b(a) { if (isNaN(a)) return "00"; var b = parseInt(a).toString(16); return 1 == b.length ? "0" + b : b } if (-1 === a.indexOf("rgb")) return a; var c = a.match(/[^0-9]*([0-9]*)[^0-9]*([0-9]*)[^0-9]*([0-9]*)[^0-9]*/i); return "#" + b(c[1]) + b(c[2]) + b(c[3]) } var q, r, s, t, u, v, w, x = a("../app/themes.js"),
@@ -541,7 +541,7 @@
                 E = "edit-mode-styles",
                 F = (d(".gate .loader"), d("html").hasClass("mobile"), function(a, b) { sessionStorage.setItem(a, b) }),
                 G = function(a) { return sessionStorage.getItem(a) };
-            this.lessVars = {}, this.isShowPanel = function() { return skrollexConfig.isInitColorPanel ? (F("skrollexCustomize", "yes"), !0) : d("html").hasClass("select-theme") ? (F("skrollexCustomize", "yes"), !1) : G("skrollexCustomize") ? !0 : !1 }(), this.show = function() { r.css({ left: "0px" }), r.addClass("on"), r.transitionEnd(function() { for (var a = 0; a < x.colors; a++) { var b = String.fromCharCode(65 + a),
+            this.lessVars = {}, this.isShowPanel = function() { return skeneConfig.isInitColorPanel ? (F("skeneCustomize", "yes"), !0) : d("html").hasClass("select-theme") ? (F("skeneCustomize", "yes"), !1) : G("skeneCustomize") ? !0 : !1 }(), this.show = function() { r.css({ left: "0px" }), r.addClass("on"), r.transitionEnd(function() { for (var a = 0; a < x.colors; a++) { var b = String.fromCharCode(65 + a),
                             c = b.toLowerCase();
                         d(".colors-" + c + ", .background-" + c + ", .background-lite-" + c + ", .background-hard-" + c).not(".no-colors-label").each(function() { var a = d(this),
                                 c = d('<span class="colors-label">Colors ' + b + "</span>"),
@@ -549,9 +549,9 @@
                                 f = a.height(),
                                 g = a.width();
                             e.left + g > 200 ? c.css("right", "10%") : c.css("left", "10%"), 30 > f && (e.top > 10 ? c.css("top", "-6px") : c.css("top", "0px")), 400 > f ? c.css("top", "25%") : c.css("top", "100px"), c.hover(function() { a.addClass("light-colors-block") }, function() { a.removeClass("light-colors-block") }).appendTo(a) }) } if (!D) { D = !0, n(!0), h(); var e = s.find(".options-gate");
-                        e.css({ opacity: 0, visibility: "hidden" }) } d(".colors-label").addClass("show") }, 500) }, this.hide = function() { r.css({ left: -1 * u + "px" }), r.removeClass("on"), d(".colors-label").off("hover").removeClass("show"), setTimeout(function() { d(".colors-label").remove() }, 1e3) }, B.isShowPanel ? d('<div id="customize-panel"></div>').appendTo("body").load(skrollexConfig.themeUri + "includes/generated/colors/color-panel.php #customize-panel>*", function(a, e, i) { "success" !== e && "notmodified" !== e ? (d("#customize-panel").remove(), b.afterConfigure()) : d.getScript(skrollexConfig.themeUri + "assets/js/custom-less.js?" + (new Date).getTime(), function(a, e, i) { if ("success" !== e && "notmodified" !== e) d("#customize-panel").remove(), b.afterConfigure();
-                    else { r = d("#customize-panel"), s = r.find(".options"), t = r.find(".toggle-button"), u = s.outerWidth(), v = r.find(".custom-css"), w = s.find(".colors"), m(); var j = G("skrollexLastColors");
-                        j && j !== skrollexConfig.colors && f(), g() && (D = !0, B.lessVars = JSON.parse(sessionStorage.getItem("lessVars")), n(), h(), s.find(".options-gate").css({ visibility: "hidden" })), C.resize(c), c(), ("yes" === G("skrollexShowColorPanel") && !skrollexConfig.isCustomizer || "yes" === y.getUrlParameter("show-color-panel")) && (F("skrollexShowColorPanel", "no"), B.show()), F("skrollexLastColors", skrollexConfig.colors), b.afterConfigure() } }) }) : b.afterConfigure() } }, { "../app/app-share.js": 5, "../app/themes.js": 8, "../tools/tools.js": 12, "../widgets/loading.js": 19 }],
+                        e.css({ opacity: 0, visibility: "hidden" }) } d(".colors-label").addClass("show") }, 500) }, this.hide = function() { r.css({ left: -1 * u + "px" }), r.removeClass("on"), d(".colors-label").off("hover").removeClass("show"), setTimeout(function() { d(".colors-label").remove() }, 1e3) }, B.isShowPanel ? d('<div id="customize-panel"></div>').appendTo("body").load(skeneConfig.themeUri + "includes/generated/colors/color-panel.php #customize-panel>*", function(a, e, i) { "success" !== e && "notmodified" !== e ? (d("#customize-panel").remove(), b.afterConfigure()) : d.getScript(skeneConfig.themeUri + "assets/js/custom-less.js?" + (new Date).getTime(), function(a, e, i) { if ("success" !== e && "notmodified" !== e) d("#customize-panel").remove(), b.afterConfigure();
+                    else { r = d("#customize-panel"), s = r.find(".options"), t = r.find(".toggle-button"), u = s.outerWidth(), v = r.find(".custom-css"), w = s.find(".colors"), m(); var j = G("skeneLastColors");
+                        j && j !== skeneConfig.colors && f(), g() && (D = !0, B.lessVars = JSON.parse(sessionStorage.getItem("lessVars")), n(), h(), s.find(".options-gate").css({ visibility: "hidden" })), C.resize(c), c(), ("yes" === G("skeneShowColorPanel") && !skeneConfig.isCustomizer || "yes" === y.getUrlParameter("show-color-panel")) && (F("skeneShowColorPanel", "no"), B.show()), F("skeneLastColors", skeneConfig.colors), b.afterConfigure() } }) }) : b.afterConfigure() } }, { "../app/app-share.js": 5, "../app/themes.js": 8, "../tools/tools.js": 12, "../widgets/loading.js": 19 }],
     11: [function(require, module, exports) {
         "use strict";
         var $ = jQuery;
@@ -559,7 +559,7 @@
             !new function() {
                 function onBodyHeightResize() { buildSizes(), scrolling.scroll(tools.windowYOffset()), calcNavigationLinkTriggers() }
 
-                function widgets($context) { new Sliders($context), isMobile || $context.find(".hover-dir").each(function() { $(this).hoverdir({ speed: 300 }) }), $context.find("a").click(function(a) { var b = $(this); if (!b.data("toggle") && !b.hasClass("menu-toggle")) { var c = customizerUrl(document.location.href); return !skrollexConfig.isCustomizer || !b.attr("href") || c !== this.href && c + "/" !== this.href && c !== this.href + "/" || getHash(this.href) ? navigate(this.href, this.hash, a, b) : (tools.scrollTo(0), a.preventDefault(), !1) } }), fluid.setup($context), new Map($context), new Counter($context, me), new ChangeColors($context), new Skillbar($context, me), new TextBg($context, me), new TextMask($context), new TextFit($context), new TextFullscreen($context), new AjaxForm($context), new CssAnimation($context, me), $(".widget-tabs a").click(function(a) { return a.preventDefault(), $(this).tab("show"), !1 }), $context.find("video").each(function() { void 0 !== $(this).attr("muted") && (this.muted = !0) }), $context.find(".open-overlay-window").each(function() { var a = $(this),
+                function widgets($context) { new Sliders($context), isMobile || $context.find(".hover-dir").each(function() { $(this).hoverdir({ speed: 300 }) }), $context.find("a").click(function(a) { var b = $(this); if (!b.data("toggle") && !b.hasClass("menu-toggle")) { var c = customizerUrl(document.location.href); return !skeneConfig.isCustomizer || !b.attr("href") || c !== this.href && c + "/" !== this.href && c !== this.href + "/" || getHash(this.href) ? navigate(this.href, this.hash, a, b) : (tools.scrollTo(0), a.preventDefault(), !1) } }), fluid.setup($context), new Map($context), new Counter($context, me), new ChangeColors($context), new Skillbar($context, me), new TextBg($context, me), new TextMask($context), new TextFit($context), new TextFullscreen($context), new AjaxForm($context), new CssAnimation($context, me), $(".widget-tabs a").click(function(a) { return a.preventDefault(), $(this).tab("show"), !1 }), $context.find("video").each(function() { void 0 !== $(this).attr("muted") && (this.muted = !0) }), $context.find(".open-overlay-window").each(function() { var a = $(this),
                             b = $(a.data("overlay-window")),
                             c = new OverlayWindow(b);
                         a.click(function(a) { return a.preventDefault(), c.show(), !1 }) }); var $fbox = $context.find(".fancybox"); if ("function" == typeof $fbox.fancybox) { var opts = { overlayShow: !0, hideOnOverlayClick: !0, overlayOpacity: .93, overlayColor: "#000004", showCloseButton: !0, padding: 0, centerOnScroll: !0, enableEscapeButton: !0, autoScale: !0 };
@@ -573,7 +573,7 @@
                                 b = a.parent().width(),
                                 c = a.parent().height(),
                                 d = b > c ? b : c;
-                            a.attr("width", d).attr("height", d) }) }; if ($(window).resize(svgOverlays), svgOverlays(), skrollexConfig.isCustomizer) { var svgUrlFix = function() { $context.find("svg").each(function() { var a = Snap($(this)[0]),
+                            a.attr("width", d).attr("height", d) }) }; if ($(window).resize(svgOverlays), svgOverlays(), skeneConfig.isCustomizer) { var svgUrlFix = function() { $context.find("svg").each(function() { var a = Snap($(this)[0]),
                                     b = function(a, b) { var c = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search + "#";
                                         a.node.setAttribute(b, a.node.getAttribute(b).replace("url('#", "url('" + c).replace('url("#', 'url("' + c).replace("url(#", "url(" + c)) };
                                 a.selectAll("[mask]").forEach(function(a) { b(a, "mask") }), a.selectAll("[fill]").forEach(function(a) { b(a, "fill") }), a.selectAll("[filter]").forEach(function(a) { b(a, "filter") }) }) };
@@ -586,10 +586,10 @@
                                     d = $(c.target),
                                     e = d.offset().top; return $(".wrapper-content .view").each(function() { var b = $(this); return b.offset().top + 100 > e ? (a = b, !1) : void 0 }), a && a.length > 0 ? a : (a = $(".wrapper-content .view"), a.length > 1 ? $(a.get(1)) : 1 === a.length && a.offset().top > 300 ? a : null) } return $(b) }(); if (c && c.preventDefault(), null !== f && f.length > 0) { var g = f.offset().top - me.topNav.state2H,
                                 h = f.get(0).tagName.toLowerCase();
-                            ("h1" === h || "h2" === h || "h3" === h || "h4" === h || "h5" === h || "h6" === h) && (g -= 20), 0 > g && (g = 0), tools.scrollTo(g) } else "#scroll-down" === b ? tools.scrollTo(Math.round($(window).height() / 2)) : tools.scrollTo(0); return skrollexConfig.isCustomizer && sessionStorage.setItem("navigate", ""), !1 } if (c && a !== location + "#") { if (!d.attr("target")) { var i = function() { c.preventDefault(); var b = me.topNav.isState1;
+                            ("h1" === h || "h2" === h || "h3" === h || "h4" === h || "h5" === h || "h6" === h) && (g -= 20), 0 > g && (g = 0), tools.scrollTo(g) } else "#scroll-down" === b ? tools.scrollTo(Math.round($(window).height() / 2)) : tools.scrollTo(0); return skeneConfig.isCustomizer && sessionStorage.setItem("navigate", ""), !1 } if (c && a !== location + "#") { if (!d.attr("target")) { var i = function() { c.preventDefault(); var b = me.topNav.isState1;
                                 me.topNav.state2(), loading.gate(function() { window.location = a }), $(window).one("pageshow popstate", function(a) { loading.ungate(), b && me.topNav.state1() }) };
-                            skrollexConfig.isCustomizer ? 0 === a.indexOf(skrollexConfig.homeUri) && sessionStorage.setItem("navigate", a) : d.hasClass("page-transition") ? i() : $pageTransition.each(function() { var a = $(this).get(0);
-                                $.contains(a, d[0]) && i() }) } } else skrollexConfig.isCustomizer && sessionStorage.setItem("navigate", "") }
+                            skeneConfig.isCustomizer ? 0 === a.indexOf(skeneConfig.homeUri) && sessionStorage.setItem("navigate", a) : d.hasClass("page-transition") ? i() : $pageTransition.each(function() { var a = $(this).get(0);
+                                $.contains(a, d[0]) && i() }) } } else skeneConfig.isCustomizer && sessionStorage.setItem("navigate", "") }
 
                 function calcNavigationLinkTriggers() { var a = $window.height(),
                         b = a / 3;
@@ -604,7 +604,7 @@
                         app.changeSection(me, b) } }
 
                 function buildSizes() { app.buildSizes(me), maxScrollPosition = $("body").height() - $window.height(); for (var a = 0; a < me.players.length; a++) { var b = me.players[a].$view;
-                        b.data("position", b.offset().top) } }! function() { window.skrollexConfig = eval("(" + $("html").data("skrollex-config") + ")"), window.skrollexConfig.screenshotMode = !1, window.skrollexConfig.animations = !1, window.skrollexConfig.animations && $("html").addClass("no-animations"), $("html").addClass("dom-ready"); var disableMobileAnimations = !0,
+                        b.data("position", b.offset().top) } }! function() { window.skeneConfig = eval("(" + $("html").data("skene-config") + ")"), window.skeneConfig.screenshotMode = !1, window.skeneConfig.animations = !1, window.skeneConfig.animations && $("html").addClass("no-animations"), $("html").addClass("dom-ready"); var disableMobileAnimations = !0,
                         isWin = -1 !== navigator.appVersion.indexOf("Win");
                     isWin && $("html").addClass("win"); var ua = navigator.userAgent.toLowerCase(),
                         isEdge = ua.indexOf("edge") > -1;
@@ -614,7 +614,7 @@
                         isAndroidBrowser = nua.indexOf("Mozilla/5.0") > -1 && nua.indexOf("Android ") > -1 && nua.indexOf("AppleWebKit") > -1 && !(nua.indexOf("Chrome") > -1);
                     isAndroidBrowser && $("html").addClass("android-browser"); var isSafari = !isChrome && -1 !== ua.indexOf("safari") && ua.indexOf("windows") < 0;
                     isSafari && $("html").addClass("safari"); var isMobile = Modernizr.touch;
-                    isMobile ? ($("html").addClass("mobile"), disableMobileAnimations && $("html").addClass("poor-browser")) : $("html").addClass("non-mobile"), isWin && isSafari && $("html").addClass("flat-animation"), navigator.userAgent.indexOf("MSIE 9.") > -1 ? $("html").addClass("ie9") : navigator.userAgent.indexOf("MSIE 10.") > -1 ? $("html").addClass("ie10") : navigator.userAgent.match(/Trident.*rv\:11\./) && $("html").addClass("ie11"), window.skrollexConfig.screenshotMode && $("html").addClass("hide-skroll-bar"), window.console ? window.console.log || (window.console.log = function() {}) : window.console = { log: function() {} }, "undefined" == typeof window.atob && (window.atob = function(a) { return base64.decode(a) }) }();
+                    isMobile ? ($("html").addClass("mobile"), disableMobileAnimations && $("html").addClass("poor-browser")) : $("html").addClass("non-mobile"), isWin && isSafari && $("html").addClass("flat-animation"), navigator.userAgent.indexOf("MSIE 9.") > -1 ? $("html").addClass("ie9") : navigator.userAgent.indexOf("MSIE 10.") > -1 ? $("html").addClass("ie10") : navigator.userAgent.match(/Trident.*rv\:11\./) && $("html").addClass("ie11"), window.skeneConfig.screenshotMode && $("html").addClass("hide-skroll-bar"), window.console ? window.console.log || (window.console.log = function() {}) : window.console = { log: function() {} }, "undefined" == typeof window.atob && (window.atob = function(a) { return base64.decode(a) }) }();
                 var Customize = require("./customize/customize.js"),
                     TopNav = require("./widgets/top-nav.js"),
                     MenuToggle = require("./widgets/menu-toggle.js"),
@@ -651,7 +651,7 @@
                     sectionTriggers = [],
                     lastActiveSectionHash, customizerUrl = function(a) {
                         var b = a;
-                        if (skrollexConfig.isCustomizer) { var c = "wp-admin/customize.php?url=",
+                        if (skeneConfig.isCustomizer) { var c = "wp-admin/customize.php?url=",
                                 d = b.indexOf(c); if (d >= 0) b = decodeURIComponent(b.substring(d + c.length));
                             else { var e = "wp-admin/customize.php",
                                     f = b.indexOf(e);
@@ -676,7 +676,7 @@
                             $window.resize(function() { var a = $window.width(),
                                     d = $window.height();
                                 (a !== b || d !== c) && (b = a, c = d, fluid.setup($("body")), onBodyHeightResize()) }), $(".masonry-grd").each(function() { $(this).masonry("on", "layoutComplete", function() { onBodyHeightResize() }) }), app.setup(function() { var b = function() { buildSizes(), calcNavigationLinkTriggers(), ticker.pageIsReady = !0, $navLinks.each(function() { this.href == location && $(this).addClass("active") }), $(".bigtext").each(function() { $(this).bigtext() }), app.ungated(), setTimeout(function() { loading.ungate(); var b = sessionStorage.getItem("navigate");
-                                            skrollexConfig.isCustomizer && b ? navigate(b, getHash(b)) : skrollexConfig.isCustomizer || navigate(customizerUrl(window.location.href), a) }) },
+                                            skeneConfig.isCustomizer && b ? navigate(b, getHash(b)) : skeneConfig.isCustomizer || navigate(customizerUrl(window.location.href), a) }) },
                                     c = function() { for (var a = $(".non-preloading, .non-preloading img"), d = $("img").not(a), e = 0; e < d.length; e++)
                                             if ($(d[e]).attr("src") && (!d[e].width || !d[e].height) && (!d[e].naturalWidth || !d[e].naturalHeight)) return void setTimeout(c, 100);
                                         b() };
@@ -694,7 +694,7 @@
             this.animationEnd = "animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", this.transitionEnd = "transitionend webkitTransitionEnd oTransitionEnd otransitionend", this.transition = ["-webkit-transition", "-moz-transition", "-ms-transition", "-o-transition", "transition"], this.transform = ["-webkit-transform", "-moz-transform", "-ms-transform", "-o-transform", "transform"], this.property = function(a, b, c) { for (var d = c ? c : {}, e = 0; e < a.length; e++) d[a[e]] = b; return d }, this.windowYOffset = void 0 !== window.pageYOffset ? function() { return window.pageYOffset } : "CSS1Compat" === document.compatMode ? function() { return document.documentElement.scrollTop } : function() { return document.body.scrollTop }, this.getUrlParameter = function(a) { for (var b = window.location.search.substring(1), c = b.split("&"), d = 0; d < c.length; d++) { var e = c[d].split("="); if (e[0] == a) return decodeURI(e[1]) } }, this.selectTextarea = function(a) { a.focus(function() { var a = d(this);
                     a.select(), a.mouseup(function() { return a.unbind("mouseup"), !1 }) }) }; var e;
             this.time = function(a) { if (e) { var b = Date.now();
-                    console.log("==== " + (b - e) + " ms" + (a ? " | " + a : "")), e = b } else e = Date.now(), console.log("==== Timer started" + (a ? " | " + a : "")) }, this.scrollTo = function(a, c, d) { void 0 === d && (d = 1200), new TWEEN.Tween({ y: b.windowYOffset() }).to({ y: Math.round(a) }, d).onUpdate(function() { window.scrollTo(0, this.y) }).easing(TWEEN.Easing.Quadratic.InOut).onComplete(function() { c && c() }).start() }, this.androidStylesFix = function(a) { c && (a.hide(), a.get(0).offsetHeight, a.show()) }, this.transformCss = function(a, b) { var c = { "-webkit-transform": a, "-moz-transform": a, "-ms-transform": a, "-o-transform": a, transform: a }; return b && (c["-webkit-transform-origin"] = b, c["-moz-transform-origin"] = b, c["-ms-transform-origin"] = b, c["-o-transform-origin"] = b, c["transform-origin"] = b), c }, this.snapUrl = function(a) { if (skrollexConfig.isCustomizer) { var b = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search + "#" + a.attr("id"); return "url('" + b + "')" } return a }, this.isMobile = navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) } }, { "../script.js": 11 }],
+                    console.log("==== " + (b - e) + " ms" + (a ? " | " + a : "")), e = b } else e = Date.now(), console.log("==== Timer started" + (a ? " | " + a : "")) }, this.scrollTo = function(a, c, d) { void 0 === d && (d = 1200), new TWEEN.Tween({ y: b.windowYOffset() }).to({ y: Math.round(a) }, d).onUpdate(function() { window.scrollTo(0, this.y) }).easing(TWEEN.Easing.Quadratic.InOut).onComplete(function() { c && c() }).start() }, this.androidStylesFix = function(a) { c && (a.hide(), a.get(0).offsetHeight, a.show()) }, this.transformCss = function(a, b) { var c = { "-webkit-transform": a, "-moz-transform": a, "-ms-transform": a, "-o-transform": a, transform: a }; return b && (c["-webkit-transform-origin"] = b, c["-moz-transform-origin"] = b, c["-ms-transform-origin"] = b, c["-o-transform-origin"] = b, c["transform-origin"] = b), c }, this.snapUrl = function(a) { if (skeneConfig.isCustomizer) { var b = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search + "#" + a.attr("id"); return "url('" + b + "')" } return a }, this.isMobile = navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) } }, { "../script.js": 11 }],
     13: [function(a, b, c) { "use strict"; var d = jQuery;
         b.exports = function(b) { var c = a("./loading.js"),
                 e = d(".gate .loader");
@@ -766,7 +766,7 @@
             this.queue = [], this.load = function(a) { var b = [],
                     f = !1,
                     h = d(".non-preloading, .non-preloading img");
-                skrollexConfig.isCustomizer || (d("img:visible").not(h).each(function() { var a = d(this),
+                skeneConfig.isCustomizer || (d("img:visible").not(h).each(function() { var a = d(this),
                         c = a.attr("src");
                     c && -1 === d.inArray(c, b) && b.push(c) }), d("div.bg:visible").not(h).each(function() { var a = d(this),
                         c = a.css("background-image"); if ("none" != c) { var e = c.match(/url\(['"]?([^'")]*)/i);
@@ -774,7 +774,7 @@
                         c = a.data("loading");
                     c && b.push(c) }); var i = 0; if (0 === b.length) f = !0, a();
                 else { var j = setTimeout(function() { f || (f = !0, a()) }, 2e4);
-                    skrollexConfig.isCustomizer || c.addClass("load-animation"), d("html").addClass("page-loading"); for (var k = 0, l = function() { i++, k = i / b.length * 100, e.css({ width: k + "%" }), i !== b.length || f || (clearTimeout(j), f = !0, a()) }, m = 0; m < b.length; m++)
+                    skeneConfig.isCustomizer || c.addClass("load-animation"), d("html").addClass("page-loading"); for (var k = 0, l = function() { i++, k = i / b.length * 100, e.css({ width: k + "%" }), i !== b.length || f || (clearTimeout(j), f = !0, a()) }, m = 0; m < b.length; m++)
                         if ("function" == typeof b[m]) b[m](l);
                         else { var n = new Image;
                             d(n).one("load error", function() { g.queue.push(l) }), n.src = b[m] } } }, this.gate = function(a) { d("html").addClass("page-is-gated"), e.css({ width: "0%" }), c.transitionEnd(function() { a && a() }).css({ opacity: 1, visibility: "visible" }) }, this.ungate = function(a) { d("html").removeClass("page-is-gated page-loading").addClass("page-is-loaded"), c.transitionEnd(function() { f && b.androidStylesFix(d("body")), a && a(), c.removeClass("load-animation") }).css({ opacity: 0, visibility: "hidden" }) } } }, { "../tools/tools.js": 12 }],

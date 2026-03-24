@@ -692,6 +692,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	}
 	.search-form label{
 		margin-bottom: 0;
+		width: 100%;
 	}
 	aside .search-submit{
 		display: block;

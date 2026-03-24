@@ -363,6 +363,9 @@ object{
 	.content-massive{
 		padding: 6%;
 	}
+	.content-sidebar{
+		padding: 0px 0px 20px 40px;
+	}
 
 	/*---------------------------*/
 	/*- VERTICAL PADDING --------*/
