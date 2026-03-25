@@ -811,43 +811,6 @@
 			</div>
 		</footer>
 	</section>
-	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-			const sidebar = document.querySelector('.sidebar');
-			const sticky = document.querySelector('.sidebar-sticky');
-			const content = document.querySelector('.pure-u-md-18-24');
-			const gap = 60;
-			if (!sidebar || !sticky || !content) return;
-			function update() {
-				const scrollY = window.pageYOffset;
-				const contentRect = content.getBoundingClientRect();
-				const sidebarRect = sidebar.getBoundingClientRect();
-				const contentTop = scrollY + contentRect.top;
-				const contentBottom = contentTop + content.offsetHeight;
-				const stickyHeight = sticky.offsetHeight;
-				const stop = contentBottom - stickyHeight - gap;
-				if (scrollY < contentTop - gap) {
-					sticky.style.position = 'relative';
-					sticky.style.top = '0';
-					sticky.style.left = '0';
-					sticky.style.width = '100%';
-				} else if (scrollY >= stop) {
-					sticky.style.position = 'absolute';
-					sticky.style.top = (content.offsetHeight - stickyHeight) + 'px';
-					sticky.style.left = '0';
-					sticky.style.width = '100%';
-				} else {
-					sticky.style.position = 'fixed';
-					sticky.style.top = gap + 'px';
-					sticky.style.left = sidebarRect.left + 'px';
-					sticky.style.width = sidebar.offsetWidth + 'px';
-				}
-			}
-			window.addEventListener('scroll', update, { passive: true });
-			window.addEventListener('resize', update);
-			update();
-		});
-	</script>
 	<script type='text/javascript' src='js\scripts.js'></script>
 	<script type='text/javascript' src='js\jquery.cookie.js'></script>
 	<script type='text/javascript' src='js\imagesloaded.min.js'></script>
