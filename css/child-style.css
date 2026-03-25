@@ -1087,12 +1087,12 @@ ol:not([class]) > li:not([class]) {
   padding-top: 15px;
 }
 .overlay-window.gallery-overlay .heading-subsection-title {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-top: 0;
   text-align: left !important;
-  font-size: 70px;
-  line-height: 90px;
-  letter-spacing: 45px;
+  font-size: 47px;
+  line-height: 80px;
+  letter-spacing: 10px;
 }
 @media (max-width: 1023px) {
   .overlay-window.gallery-overlay .heading-subsection-title {
@@ -1252,14 +1252,14 @@ ol:not([class]) > li:not([class]) {
   -ms-transition: all 0.6s;
   -o-transition: all 0.6s;
   transition: all 0.6s;
-  width: 40px;
+  width: 30px;
   height: 40px;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
-  margin: 25px;
+  margin: 5px 25px;
 }
 .android-browser-4_3minus .cross {
   transition: none;
@@ -1334,7 +1334,7 @@ ol:not([class]) > li:not([class]) {
   -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
-  margin: 25px;
+  margin: 5px 25px;
 }
 .android-browser-4_3minus .overlay-window .next {
   transition: none;
@@ -1409,7 +1409,7 @@ ol:not([class]) > li:not([class]) {
   -ms-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
-  margin: 25px;
+  margin: 5px 25px;
 }
 .android-browser-4_3minus .previos {
   transition: none;
@@ -1469,7 +1469,7 @@ ol:not([class]) > li:not([class]) {
   -o-transform: rotate(45deg);
 }
 .overlay-control {
-  height: 90px;
+  height: 50px;
 }
 #fancybox-close {
   display: inline-block !important;
